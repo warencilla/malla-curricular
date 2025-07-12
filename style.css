@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.asignatura {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.asignatura:hover {
+  background-color: #e8f0fe;
+}
+
+.asignatura.cursada {
+  background-color: #b2fab4;
+  border-color: #4caf50;
+}
