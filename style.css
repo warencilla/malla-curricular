@@ -1,36 +1,48 @@
 body {
   font-family: sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f4f4f9;
   text-align: center;
   padding: 2rem;
 }
-
 h1 {
   margin-bottom: 2rem;
 }
-
 .malla {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
-
-.asignatura {
+.semestre {
   background-color: #ffffff;
-  border: 2px solid #ccc;
   padding: 1rem;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+.semestre h2 {
+  background-color: #e0e0e0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.asignatura {
+  background-color: #fdfdfd;
+  border: 2px solid #ccc;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-
 .asignatura:hover {
-  background-color: #e8f0fe;
+  background-color: #eaf4ff;
 }
-
 .asignatura.cursada {
   background-color: #b2fab4;
   border-color: #4caf50;
+  text-decoration: line-through;
 }
